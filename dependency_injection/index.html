@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="depinj">
     <head>
         <meta charset="utf-8">
         <script src="../node_modules/angular/angular.min.js"></script>
@@ -8,8 +8,8 @@
     </head>
     <body>
         <h1>Dependency Injection</h1>
-        <div>
-            <input type="text">
+        <div ng-controller="depinjcon">
+            <input type="text" ng-model="name" ng-blur="upper()">
         </div>
     </body>
 </html>
