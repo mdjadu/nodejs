@@ -3,7 +3,7 @@
 
     angular.module('depinj',[])
 
-    .controller('depinjcon',depinjc);
+    .controller('depinjcon',['$scope','$filter',depinjc]);
 
     function depinjc ($scope,$filter) { // filter is use to format the data  
         $scope.name = "Krushna";
