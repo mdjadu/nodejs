@@ -1,6 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MsgApp">
     <head>
         <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
     </head>
+    <title>Filter</title>
+    <body>
+        <h1>Krushna like which image ? (Filter version)</h1>
+        <div ng-controller = "MsgController">
+            {{name}} has a message for you :
+            <br>
+            <br>
+            {{sayM()}}
+            <br>
+            <br>
+            <div>
+                <button ng-click = "ImageChange()">Click to change</button>
+                <br><br>
+                Cost to make this site : {{cost | currency : "₹"}}
+                <br><br>
+                <img ng-src="images/{{state}}.jpg">
+            </div>
+        </div>
+    </body>
 </html>

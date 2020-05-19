@@ -4,15 +4,20 @@
     angular.module('MsgApp',[])
     .controller('MsgController',MsgC);
 
-    MsgC.$inject = ['$scope','$inject'];
-    function MsgC($scope,$inject){
+    MsgC.$inject = ['$scope','$filter'];
+    function MsgC($scope,$filter){
         $scope.name = "Krushna";
         $scope.state = "flower";
+        $scope.cost = 0.45; 
 
         $scope.sayM = function(){
-            var msg = "i like sunrise not flower";
-            var output = $filter('uppercase')(msg);
+            var msg = $filter('uppercase');
+            var output = msg("i like sunrise not flower");
             return output;
+        };
+
+        $scope.ImageChange = function(){
+            $scope.state = "sun";
         };
     };
 })();
