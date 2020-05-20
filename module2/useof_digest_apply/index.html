@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<htm ng-app = "DC">
+    <head>
+        <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <title>Digest Cycle</title>
+    <body>
+        <h1>The Digest Cycle Use Of $digest and $apply</h1>
+        <div ng-controller = "DCcontroller">
+            <button ng-click = "clickfun()">Increment counter</button>
+            <br>
+            Regular counter : {{ counter }}
+        </div>
+    </body>
+</html>
