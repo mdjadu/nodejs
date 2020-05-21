@@ -3,7 +3,7 @@
 
     angular.module('',[])
     .controller('',);
-    .$inject = $scope;
+    .$inject = ['$scope'];
 
     function  ($scope){
         
