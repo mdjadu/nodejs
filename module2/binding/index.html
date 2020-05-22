@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app = "binding">
+    <head>
+        <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <title>Bindng</title>
+    <body>
+        <h1>We are Learning Binding</h1>
+        <div ng-controller = "bindController">
+            <button ng-click="watcherfun()"># of watcher</button><br>
+            <button ng-click="setFullname()">Set Full Namer</button>
+            Full name is : {{ :: fullname }}<br>
+            <button ng-click="logfirstname()">Logs for First Name</button><br>
+            <button ng-click="logfullname()">Log for Full Name</button>
+            <input type="text" ng-model = "firstname">
+        </div>
+    </body>
+</html>
+
+<!-- ng-model is used then its 2 way binding
+{{}} is used then its 1 way binding
+{{:: "variable name"}} is used the its just 1 time binding -->
